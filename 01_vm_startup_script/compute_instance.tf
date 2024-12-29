@@ -58,3 +58,8 @@ output "labels_attached" {
 output "tags_attached" {
   value = google_compute_instance.vm_instance.tags
 }
+
+# Get the persitent disk details 
+output "boot_disk" {
+  value = google_compute_instance.vm_instance.boot_disk
+}
